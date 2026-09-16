@@ -19,7 +19,11 @@ body {
 .game {
     width: 100%;
     max-width: 400px;
+    min-height: 100dvh;
     padding: 30px 20px;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 
     background: white;
