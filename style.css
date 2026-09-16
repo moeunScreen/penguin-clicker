@@ -122,9 +122,11 @@ h1 {
     transform: scale(1.07);
 }
 .stage.egg #clickButton:active,
-.stage.king #clickButton:active,
-.stage.glass #clickButton:active {
+.stage.king #clickButton:active{
     transform: scale(0.92);
+}
+.stage.glass #clickButton:active {
+    transform: scale(0.9);
 }
 
 .counter {
