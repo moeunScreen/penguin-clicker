@@ -73,7 +73,7 @@ h1 {
     height: 100%;
 
     object-fit: contain;
-
+    pointer-events: none;
     transition: transform 0.1s;
 }
 
@@ -97,6 +97,8 @@ h1 {
 #clickButton {
     width: 100%;
     height: 100%;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
     border: none;
     padding: 0;
     background: transparent;
