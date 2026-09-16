@@ -82,20 +82,12 @@ h1 {
     transition: transform 0.1s;
 }
 
-#penguinImage:active {
+#clickButton:active {
     transform: scale(0.92);
 }
-.stage.friend #penguinImage:active,
-.stage.craft #penguinImage:active {
-    transform: none;
-}
-.stage.friend #clickButton:hover,
-.stage.craft #clickButton:hover {
-    transform: none;
-}
 
-.stage.friend #penguinImage:active,
-.stage.craft #penguinImage:active {
+.stage.friend #clickButton:active,
+.stage.craft #clickButton:active {
     transform: none;
 }
 
@@ -109,27 +101,29 @@ h1 {
     background: transparent;
     cursor: pointer;
 }
+#clickButton:active {
+    transform: scale(0.92);
+}
 #clickButton:disabled {
+    cursor: default;
+}.stage.friend #clickButton,
+.stage.craft #clickButton {
     cursor: default;
 }
 
-#clickButton:disabled:hover {
+.stage.friend #clickButton:hover,
+.stage.craft #clickButton:hover {
+    transform: none;
+}
+
+.stage.friend #clickButton:active,
+.stage.craft #clickButton:active {
     transform: none;
 }
 
 .stage.egg #clickButton:hover,
 .stage.king #clickButton:hover {
     transform: scale(1.05);
-}
-
-.stage.friend #clickButton,
-.stage.craft #clickButton {
-    cursor: default;
-}
-.stage.friend #clickButton:hover,
-.stage.craft #clickButton:hover {
-    transform: none;
-    cursor: default;
 }
 
 .counter {
