@@ -8,7 +8,6 @@ body {
 
     display: flex;
     justify-content: center;
-    align-items: center;
 
     font-family: sans-serif;
     background: #eaf7ff;
@@ -17,7 +16,6 @@ body {
 .game {
     width: 100%;
     max-width: 400px;
-    min-height: 100vh;
     padding: 30px 20px;
 
     display:flex;
