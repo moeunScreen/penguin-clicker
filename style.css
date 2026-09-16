@@ -13,18 +13,22 @@ body {
     font-family: sans-serif;
     background: #eaf7ff;
 }
-
+@media (max-width: 600px) {
 .game {
     width: 100%;
     max-width: 400px;
     min-height: 100vh;
     padding: 30px 20px;
 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 
     background: white;
     border-radius: 0px;
     box-shadow: none;
+}
 }
 
 h1 {
