@@ -117,11 +117,13 @@ h1 {
 }
 
 .stage.egg #clickButton:hover,
-.stage.king #clickButton:hover {
+.stage.king #clickButton:hover,
+.stage.glass #clickButton:hover {
     transform: scale(1.07);
 }
 .stage.egg #clickButton:active,
-.stage.king #clickButton:active {
+.stage.king #clickButton:active,
+.stage.glass #clickButton:active {
     transform: scale(0.92);
 }
 
