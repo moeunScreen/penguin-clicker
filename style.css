@@ -19,11 +19,12 @@ body {
 .game {
     width: 100%;
     min-height: 100dvh;
+    max-width: none;
     padding: 30px 20px;
 
     text-align: center;
 
-    background: white;
+    background: red;
     border-radius: 0px;
     box-shadow: none;
 }
