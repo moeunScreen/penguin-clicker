@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: sans-serif;
+    background: #eaf7ff;
+}
+
+.game {
+    width: 400px;
+    padding: 40px;
+
+    text-align: center;
+
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#description {
+    color: #666;
+}
+
+.stage {
+    width: 200px;
+    height: 200px;
+
+    margin: 30px auto;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: width 0.3s, height 0.3s;
+}
+.stage.egg{
+    width : 100px;
+    height : 100px;
+}
+.stage.king {
+    width: 200px;
+    height: 200px;
+}
+.stage.friend {
+    width: 200px;
+    height: 200px;
+}
+.stage.craft {
+    width: 200px;
+    height: 200px;
+}
+.stage.space {
+    width: 200px;
+    height: 200px;
+}
+#penguinImage {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: transform 0.1s;
+}
+
+#penguinImage:active {
+    transform: scale(0.92);
+}
+.stage.friend #penguinImage:active,
+.stage.craft #penguinImage:active {
+    transform: none;
+}
+.stage.friend #clickButton:hover,
+.stage.craft #clickButton:hover {
+    transform: none;
+}
+
+.stage.friend #penguinImage:active,
+.stage.craft #penguinImage:active {
+    transform: none;
+}
+
+#clickButton {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+#clickButton:disabled {
+    cursor: default;
+}
+
+#clickButton:disabled:hover {
+    transform: none;
+}
+
+.stage.egg #clickButton:hover,
+.stage.king #clickButton:hover {
+    transform: scale(1.05);
+}
+
+.stage.friend #clickButton,
+.stage.craft #clickButton {
+    cursor: default;
+}
+.stage.friend #clickButton:hover,
+.stage.craft #clickButton:hover {
+    transform: none;
+    cursor: default;
+}
+
+.counter {
+    margin-top: 10px;
+    font-size: 20px;
+}
+#heartImage {
+    display: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+
+#heartImage:hover {
+    transform: scale(1.1);
+}
+
+#heartImage:active {
+   transform: scale(0.85);
+}
+
+.below-stage {
+    text-align: center;
+    min-height: 100px;
+}
+
+#stageName {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#message {
+    white-space: pre-line;
+    margin-top: 5px;
+    font-size: 20px;
+}
